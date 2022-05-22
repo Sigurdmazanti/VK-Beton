@@ -1,0 +1,83 @@
+{
+    "key": "group_62457c11e4931",
+    "title": "Indstillinger",
+    "fields": [
+        {
+            "key": "field_62457c37ed391",
+            "label": "Vælg indlæg",
+            "name": "choose_posts",
+            "type": "relationship",
+            "instructions": "Vælg indlæggene som skal vises på kategorisiden.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "post"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search",
+                "post_type",
+                "taxonomy"
+            ],
+            "elements": [
+                "featured_image"
+            ],
+            "min": 3,
+            "max": 3,
+            "return_format": "object"
+        },
+        {
+            "key": "field_62459e983d3c0",
+            "label": "Vælg udvalgte produkter",
+            "name": "choose_featured_products",
+            "type": "relationship",
+            "instructions": "Vælg de udvalgte produkter der skal fremvises på kategorisiden.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "product"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search",
+                "post_type",
+                "taxonomy"
+            ],
+            "elements": [
+                "featured_image"
+            ],
+            "min": 4,
+            "max": 4,
+            "return_format": "object"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "taxonomy_term_parent",
+                "operator": "==",
+                "value": "true"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1648730285
+}
